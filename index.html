@@ -2,60 +2,258 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <title>Mario's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="This is my personal online resume.">
     <meta name="author" content="Mario Rodriguez">
 
-    <title>Mario's Resume</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/704484a5db.js"></script>
+
+    <!-- Customized CSS-->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Customized JS-->
+    <script src="support.js" defer></script>
+
+    <!-- Shortcut icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+
+    <!-- Customized font-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body data-spy="scroll" data-target="#navigation" id="home">
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg bg-transaparent navbar-dark fixed-top" id="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Overview</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">	
-                    <li>
-                        <a href="https://www.linkedin.com/in/mario-rodriguez-6488a699/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="mronfire.github.io/contact.html">Contact</a>
-                    </li>
+            <!-- <a href="index.html" class="navbar-brand">Huy Minh Tran</a> -->
+            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-right" id="navCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#main" class="nav-link" id="test">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" id="test">About</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link" id="test">Project</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>Mario Rodriguez Chamorro</h1>
-                <p class="lead">1000 E 5th Street Apt# 456 Austin TX 78702 </p>
-				<p class="lead">Email: <a href=mailto:"marodriguez92@gmail.com">marodriguez92@gmail.com</a></p>
-				<p class="lead">Cell: (202) 751 - 8592</p>
-            </div> 
+    <!-- Main Page -->
+    <header id="main">
+        <div class="container home-inner">
+            <div class="row">
+                <div class="col text-center text-small">
+                    <h1 class="display-3 py-4"><strong>Welcome to my Portfolio</strong></h1>
+                    <h3 class="display-3">My name is Mario Rodriguez.</h3>
+                </div>
+            </div>
         </div>
-        <!-- /.row -->
+    </header>
 
-    </div>
-    <!-- /.container -->
+    <!-- About Me-->
+    <section class="py-2 bg-dark border-bottom" id="about">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col">
+                    <h2 class="display-3 text-center"><strong>About Me</strong></h2>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-6 py-3">
+                    <img src="images/Mario Rodriguez IT.png" class="img-fluid rounded" />
+                </div>
+                <div class="col-lg-6 py-3">
+                    <p class="lead text-justify">
+                        I am a senior Computer Science student at University of California, Irvine
+                        and I will be finishing my Bachelor degree in
+                        2020.
+                    </p>
+                    <p class="lead text-justify">I am passionate about building useful software that creates a huge
+                        positive impact
+                        to the society.</p>
+                    <p class="lead text-justify">I specialize in Information which concentrates on database management,
+                        web
+                        search and data mining. Recently, I have grown an interest in Web development; therefore, I try to
+                        learn modern technologies and web frameworks to enhance my knowledge in the field.</p>
+                    <p class="lead text-justify">I am results-driven and motivated, so I work hard to find the proper solution
+                        and achieve
+                        the proposed result.
+                    </p>
+                    <p class="lead text-justify pb-1">
+                        <u>Fun facts:</u>
+                        I like the outdoors.
+                    </p>
+                    <div class="pt-4 d-flex justify-content-center">
+                        <a href="src/Resume-P.pdf" class="btn btn-success btn-lg"
+                            download="Resume-P.pdf">Download my Resume</a>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project-->
+    <section class="py-2 bg-dark border-top border-bottom" id="project">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-sm-12 col-sm-offset-2">
+                    <!-- Using .col-sm-12 col-sm-offset-2 to ensure the column will stack upon each other for mobile view -->
+                    <div class="row py-4">
+                        <div class="col">
+                            <h2 class="display-3 text-center"><strong>Projects</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 py-3">
+                            <img src="image/fabflix_picture.png" alt="" class="img-fluid rounded">
+                        </div>
+                        <div class="col-sm-6 py-3">
+                            <h3 class="text-center"><button class="btn btn-success btn-lg" data-toggle="collapse"
+                                    data-target="#fabflix">FabFlix (MVP)</button></h3>
+                            <div class="collapse" id="fabflix">
+                                <div class="card card-body bg-dark border border-light text-justify lead">
+                                    <!-- <p class="card-text text-justify lead"> -->
+                                    Fabflix is an E-commerce single page application that allows customer to perform
+                                    various activity on the website (register,
+                                    login, search movie, buy
+                                    movie, etc). The backend uses REST architecture with an API
+                                    Gateway to
+                                    provide uniform
+                                    experience.
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                            <p class="lead pt-2">Languages: Java, SQL, HTML, CSS, JavaScript</p>
+                            <p class="lead">Stack: Github, JDBC, Jersey, Jackson, Grizzly, jQuery, MySQL</p>
+                        </div>
+                    </div>
+                    <div class="row text-center py-3">
+                        <div class="col">
+                            <a href="https://youtu.be/-Zk0d_VimuM" class="btn btn-success btn-lg" target="_blank">View
+                                on Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr width="50%" color="white" style="opacity: 0.5;">
+
+            <div class="row py-3">
+                <div class="col-sm-12 col-sm-offset-2">
+                    <div class="row">
+                        <div class="col-sm-6 py-3 order-sm-12">
+                            <!-- When small portview, this col will be stacked on top of other col -->
+                            <div class="carousel slide" id="slider" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li id="darker" data-target="#slider" class="active" data-slide-to="0"></li>
+                                    <li id="darker" data-target="#slider" data-slide-to="1"></li>
+                                    <li id="darker" data-target="#slider" data-slide-to="2"></li>
+                                    <li id="darker" data-target="#slider" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid rounded" src="image/first_slide.png" alt="First Slide">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded" src="image/second_slide.png" alt="Second Slide">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded" src="image/third_slide.png" alt="Third Slide">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded" src="image/fourth_slide.png" alt="Fourth Slide">
+                                    </div>
+                                </div>
+                                <a href="#slider" class="carousel-control-prev" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a href="#slider" class="carousel-control-next" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 py-3 order-sm-1">
+                            <!-- Lower order -->
+                            <h3 class="text-center"><button class="btn btn-success btn-lg" data-toggle="collapse"
+                                    data-target="#fcw">FriendlyCarWashers</button></h3>
+                            <div class="collapse" id="fcw">
+                                <div class="card card-body border border-light bg-dark text-justify lead">
+                                    <!-- <p class="card-text text-justify lead"> -->
+                                    FriendlyCarWashers is a desktop application
+                                    that
+                                    was based on my idea of allowing the user to make appointment with a certain car
+                                    wash in the selected area to reduce the wait time. The project was built
+                                    together with 4 other students. We customized Agile development to accommodate
+                                    standup
+                                    meeting on lecture day only.
+                                    <!-- </p> -->
+                                </div>
+                            </div>
+                            <p class="lead pt-2">Languages: Java</p>
+                            <p class="lead">Stack: SceneBuilder, Eclipse, Trello, Agile Development</p>
+                        </div>
+                    </div>
+                    <div class="row text-center py-4">
+                        <div class="col">
+                            <a href="https://github.com/emmohac/FriendlyCarWashers"
+                                class="btn btn-success btn-lg text-center" target="_blank">View on
+                                Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <section class="bg-dark py-2 border-top" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <p>&copy; <span id="year"></span> Huy Minh Tran</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <a href="mailto:huymt2@uci.edu?Subject=From%20Portfolio">
+                                <i class="fas fa-envelope fa-2x mx-1"></i>
+                            </a>
+                            <a href="https://github.com/emmohac" target="_blank"><i
+                                    class="fab fa-github fa-2x mx-1"></i></a>
+                            <a href="https://www.linkedin.com/in/huyminhtran/" target="_blank"><i
+                                    class="fab fa-linkedin fa-2x mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
